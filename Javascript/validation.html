@@ -1,0 +1,33 @@
+<!--
+    an example of validation form to only pass people who love the fries
+-->
+
+<html>
+    <head>
+        <script type="text/javascript">
+            // De aquí no pasa si no le gustan las patatas.
+            function checkFries(){
+                var field=document.foodForm.foodField;
+                var cacharro = field.value;
+                var first = cacharro.substring(0,5).toUpperCase();
+                if (first != "FRIES"){
+                    field.value="";
+                    alert("Sorry, fries must be the first word of '" + cacharro + "'.\n Please, try again");
+                    return false;
+                }else{
+                field.value="Si señor, que te gusten las papas";
+                return true;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <!-- el atributo ON SUBMIT nos permite que si ha habido un error en la comprobación, no nos deje ir al servlet -->
+        <form action="youRules!" name="foodForm" onsubmit="return validarFormulario()">
+            <b> What's your favorite food?</b>
+            <input type="text" name="foodField" onChange="checkFries()">
+            <input type="submit" value="Show it to me">
+        </form>
+    </body>
+
+</html>
