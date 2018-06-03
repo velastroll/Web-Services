@@ -1,0 +1,24 @@
+<libreria> 
+    <libro>
+        <titulo> Murach's Java Servlets and JSP</titulo>
+        <autores>
+            <autor> Andrea Steelman </autor>
+            <autor> Joel Murach </autor>
+        </autores>
+        <isbn> 978-1890774448 </isbn>
+        <editorial> Mike Murach Associates <editorial>
+        <año> 2008 </año>
+    </libro>
+    <libro>
+        <titulo> Web Services: Concepts, Architectures and Applications </titulo>
+        <autores>
+            <autor> Gustavo Alonso</autor>
+            <autor> Fabio Casati</autor>
+            <autor> Harumi Kuno</autor>
+            <autor> Vijay Machiraju</autor>
+        </autores>
+        <isbn> 978-3642078880 </isbn>
+        <editorial> Springer <editorial>
+        <año> 2010 </año>
+    </libro>
+</libreria>

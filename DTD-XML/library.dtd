@@ -1,0 +1,8 @@
+<!ELEMENT libreria ( libro+ ) >
+<!ELEMENT libro ( titulo, autores?, isbn, editorial, año ) >
+<!ELEMENT titulo ( #PCDATA ) >
+<!ELEMENT autores ( autor+ ) >
+<!ELEMENT autor ( #PCDATA ) >
+<!ELEMENT isbn ( #PCDATA ) >
+<!ELEMENT editorial ( #PCDATA ) >
+<!ELEMENT año ( #PCDATA ) >
